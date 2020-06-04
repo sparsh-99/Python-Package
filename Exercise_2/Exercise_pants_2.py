@@ -5,44 +5,31 @@
 
 
 # # Pants class
-# 
-# Write a Pants class with the following characteristics:
-# * the class name should be Pants
-# * the class attributes should include
-#  * color
-#  * waist_size
-#  * length
-#  * price
-# * the class should have an init function that initializes all of the attributes
-# * the class should have two methods
-#  * change_price() a method to change the price attribute
-#  * discount() to calculate a discount
-
-# In[3]:
 
 
-### TODO:
+
+### 
 #   - code a Pants class with the following attributes
 #   - color (string) eg 'red', 'yellow', 'orange'
 #   - waist_size (integer) eg 8, 9, 10, 32, 33, 34
 #   - length (integer) eg 27, 28, 29, 30, 31
 #   - price (float) eg 9.28
-### TODO: Declare the Pants Class 
+### Declare the Pants Class 
 class Pants:
-### TODO: write an __init__ function to initialize the attributes
+### write an __init__ function to initialize the attributes
     def __init__(self, pants_color, pants_waist_size, pants_length, pants_price):
         self.color=pants_color
         self.waist_size=pants_waist_size
         self.length=pants_length
         self.price=pants_price
-### TODO: write a change_price method:
+###  write a change_price method:
 #    Args:
 #        new_price (float): the new price of the shirt
 #    Returns:
 #        None
     def change_price(self, new_price):
         self.price = new_price
-### TODO: write a discount method:
+### write a discount method:
 #    Args:
 #        discount (float): a decimal value for the discount. 
 #            For example 0.05 for a 5% discount.
@@ -52,12 +39,6 @@ class Pants:
     def discount(self, discount):
         return self.price*(1-discount)
 
-
-# # Run the code cell below to check results
-# 
-# If you run the next code cell and get an error, then revise your code until the code cell doesn't output anything.
-
-# In[4]:
 
 
 def check_results():
@@ -79,7 +60,6 @@ check_results()
 
 # # SalesPerson class
 # 
-# The Pants class and Shirt class are quite similar. Here is an exercise to give you more practice writing a class. **This exercise is trickier than the previous exercises.**
 # 
 # Write a SalesPerson class with the following characteristics:
 # * the class name should be SalesPerson
@@ -97,10 +77,7 @@ check_results()
 #  * display_sales() a method to print out all the pants sold with nice formatting
 #  * calculate_commission() a method to calculate the salesperson commission based on total sales and a percentage
 
-# In[52]:
 
-
-### TODO:
 #   Code a SalesPerson class with the following attributes
 #   - first_name (string), the first name of the salesperson
 #   - last_name (string), the last name of the salesperson
@@ -110,9 +87,9 @@ check_results()
 #            pants that the salesperson has sold 
 #   - total_sales (float), sum of sales of pants sold
 
-### TODO: Declare the SalesPerson Class 
+### Declare the SalesPerson Class 
 class SalesPerson:
-### TODO: write an __init__ function to initialize the attributes
+###  write an __init__ function to initialize the attributes
 ###    Input Args for the __init__ function:
 #        first_name (str)
 #        last_name (str)
@@ -130,7 +107,7 @@ class SalesPerson:
         self.salary=salary
         self.pants_sold=[]
         self.total_sales=0
-### TODO: write a sell_pants method:
+### write a sell_pants method:
 #
 #    This method receives a Pants object and appends
 #    the object to the pants_sold attribute list
@@ -141,7 +118,7 @@ class SalesPerson:
 #        None
     def sell_pants(self, pants_object):
         self.pants_sold.append(pants_object)
-### TODO: write a display_sales method:
+### write a display_sales method:
 #    
 #    This method has no input or outputs. When this method 
 #    is called, the code iterates through the pants_sold list
@@ -157,7 +134,7 @@ class SalesPerson:
     def display_sales(self):
         for pants in self.pants_sold:
             print('color: {}, waist_size: {}, length: {}, price: {}'                  .format(pants.color, pants.waist_size, pants.length, pants.price))
-### TODO: write a calculate_sales method:
+### write a calculate_sales method:
 #      This method calculates the total sales for the sales person.
 #      The method should iterate through the pants_sold attribute list
 #      and sum the prices of the pants sold. The sum should be stored
@@ -178,7 +155,7 @@ class SalesPerson:
         
         return total
 
-### TODO: write a calculate_commission method:
+### write a calculate_commission method:
 #
 #   The salesperson receives a commission based on the total
 #   sales of pants. The method receives a percentage, and then
@@ -186,7 +163,7 @@ class SalesPerson:
 #   and then returns the commission as (percentage * total sales)
 #
 #    Args:
-#        percentage (float): comission percentage as a decimal
+#        percentage (float): commission percentage as a decimal
 #
 #    Returns:
 #        float: total commission
@@ -199,10 +176,7 @@ class SalesPerson:
 
 
 # # Run the code cell below to check results
-# 
-# If you run the next code cell and get an error, then revise your code until the code cell doesn't output anything.
 
-# In[53]:
 
 
 def check_results():
@@ -244,7 +218,6 @@ check_results()
 # color: tan, waist_size: 28, length: 30, price: 8.12
 # ```
 
-# In[54]:
 
 
 pants_one = Pants('red', 35, 36, 15.12)
