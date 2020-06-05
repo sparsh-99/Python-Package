@@ -1,10 +1,10 @@
 # GaBi-distribution Python Package
 GaBi stands for Gaussian-Binomial Distribution python package
 
-# Files
+### Files
 Explanation of files in the package
 
-# Installation
+### Installation
 pip install gabi-probability
 
-### Created by Sparsh Garg
+#### Created by Sparsh Garg
