@@ -1,4 +1,4 @@
-# gabi-distribution Python Package
+# GaBi-Distribution Python Package
 gabi stands for Gaussian-Binomial Distribution python package
 
 ### Files
