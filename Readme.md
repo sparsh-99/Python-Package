@@ -1,5 +1,8 @@
 # GaBi-Distribution Python Package
-GaBi [ Gaussian-Binomial Distribution python package ]
+GaBi [ Gaussian-Binomial Distribution python package ] describes the number of positive outcomes in binary experiments, and it is the “mother” distribution from which the other two distributions can be obtained. ... For this reason, the Gaussian distribution applies to a large number of variables, and it is referred to as the normal distribution
+
+
+<img src="http://hyperphysics.phy-astr.gsu.edu/hbase/Math/immath/gauds.png" width=400 height=300>
 
 ### Files
 Explanation of files in the package
